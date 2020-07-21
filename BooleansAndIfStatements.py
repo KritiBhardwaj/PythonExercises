@@ -1,11 +1,4 @@
 # Q1) Write a program that determines whether or not it is time for Roary the cat to catch moths
-<<<<<<< HEAD
-moths_in_house = input("Enter True or False: ")
-if moths_in_house:
-    print("Get the moths!")
-else:
-    print("No threats detected.")
-=======
 moths_in_house = True 
 if moths_in_house:
     print("Get the moths!")
@@ -21,7 +14,7 @@ else:
 
 # Q2) Amend the previous program to determine whether or not it is time for Roary to go moth hunting.
 moths_in_house = False
-mitch_is_house = False
+mitch_is_house = True
 
 if moths_in_house and mitch_is_house:
     print("Hoooman! Help me get the moths!")
@@ -62,4 +55,3 @@ else:
 
 
 
->>>>>>> develop
