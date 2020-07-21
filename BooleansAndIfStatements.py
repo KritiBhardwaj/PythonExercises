@@ -1,15 +1,17 @@
 # Q1) Write a program that determines whether or not it is time for Roary the cat to catch moths
-moths_in_house = True 
-if moths_in_house:
+moths_in_house = input("Please enter True or False: ") 
+if moths_in_house == "True":
     print("Get the moths!")
-else:
+elif moths_in_house == "False":
     print("No threats detected.")
+else:
+    print("No Action")
 
-moths_in_house = False
-if moths_in_house:
-    print("Get the moths!")
-else:
-    print("No threats detected.")
+# moths_in_house = False
+# if moths_in_house:
+#     print("Get the moths!")
+# else:
+#     print("No threats detected.")
 
 
 # Q2) Amend the previous program to determine whether or not it is time for Roary to go moth hunting.
