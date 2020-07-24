@@ -1,7 +1,7 @@
 # Q1) Continuously ask the user to enter a number until they provide a blank input. Output the sum of all the
 # numbers
 number = input("Enter a number: ")
-while len(number) > 0:
+while number != "":
     sum = 0
     sum = sum + int(number)
     print(sum)
