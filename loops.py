@@ -1,20 +1,20 @@
-# Q1) Continuously ask the user to enter a number until they provide a blank input. Output the sum of all the
-# numbers
-# number = 0
-# sum = 0
-# while number != '':
-#     number = input("Enter a number: ")
-#     if number:
-#         sum = sum + int(number)
-#         print(sum)
+# # Q1) Continuously ask the user to enter a number until they provide a blank input. Output the sum of all the
+# # numbers
+# # number = 0
+# # sum = 0
+# # while number != '':
+# #     number = input("Enter a number: ")
+# #     if number:
+# #         sum = sum + int(number)
+# #         print(sum)
 
 
-# sum = 0
-# number = 'number'
-# while len(number) > 0:
-#     number = input("Enter number: ")
-#     sum = sum + int(number)
-#     print(f"The sum is {sum}")
+# # sum = 0
+# # number = 'number'
+# # while len(number) > 0:
+# #     number = input("Enter number: ")
+# #     sum = sum + int(number)
+# #     print(f"The sum is {sum}")
 
 
 number = 0
@@ -61,12 +61,22 @@ groceries = [
 ["Oranges", 3.08]
 ]
 
-print()
-print(f"====Izzy's Food Emporium====")
+
 newList = []
+groceryCost = 0
 for item in groceries:
     n = input(f"How many {item[0]}: ")
     totalItemCost = item[1] * int(n)
-    print(f"{item[0]:<20} : {totalItemCost:}")
-    newList.extend([item[0], totalItemCost])
-    print(newList)
+    groceryCost = groceryCost + totalItemCost
+    # print(f"{item[0]:<20} : {totalItemCost:}")
+    newList.append([item[0], totalItemCost])
+
+print(newList)
+
+print()
+print(f"====Izzy's Food Emporium====")
+for item in newList:
+    # print(f"{newList[0]:<20} : {newList[1]:2f}")
+    print(f"{item[0]:<20} : ${item[1]:.2f}")
+print('============================')
+print(f"{'$':>24}{groceryCost:.2f}")
